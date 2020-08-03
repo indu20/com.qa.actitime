@@ -15,9 +15,12 @@ public class LoginPage extends DriverScript
 	 @FindBy(xpath="//div[@class='atLogoImg']")WebElement actilogo;
 	 @FindBy(id="keepLoggedInCheckBox")WebElement checkbox;
 	 
+//"*********************************************************************************************"//	 
 	 public LoginPage() {
              PageFactory.initElements(driver,this);
              }
+	 
+	 //"****************************************************************************************"//
 	 @Test
 	  public void validateLoginFunction(String username,String password)
 	  {
@@ -28,19 +31,21 @@ public class LoginPage extends DriverScript
 		  //checkbox.isEnabled();
 	}
 	 
-	  public boolean validateactilogo()
+	  public boolean verifyactilogo()
 	  {
 		boolean logo = actilogo.isDisplayed();
 		return logo;
 	  }
-	  public boolean validatecheckbox()
+	  public boolean verifycheckbox()
 	  {
 		boolean check = checkbox.isEnabled();
 		  return check;
 	  }
-	  public void logintitle()
+	  public String verifyLoginPagetitle()
 	  {
-		  driver.getTitle();
+		 return driver.getTitle();
+		 
+		 
 	  }
 	 
 }
