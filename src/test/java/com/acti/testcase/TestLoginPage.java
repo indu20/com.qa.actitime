@@ -22,7 +22,7 @@ public class TestLoginPage extends DriverScript
 	     
 	   }
        
-       /*public void validateLoginFun()
+       public void validateLoginFun()
        {
     	   initBrowser();
     	   LoginPage lp = new LoginPage();
@@ -30,5 +30,5 @@ public class TestLoginPage extends DriverScript
     	   EnterTimePage tp = new EnterTimePage();
     	   tp.clicklogout();
     	   driver.close();
-       }*/
+       }
 }

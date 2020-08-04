@@ -37,8 +37,7 @@ public class LoginPage extends DriverScript
 	  }
 	  public boolean verifycheckbox()
 	  {
-		boolean check;
-		return check = checkbox.isEnabled();
+		 return checkbox.isEnabled();
 	  }
 	  public String verifyLoginPagetitle()
 	  {
