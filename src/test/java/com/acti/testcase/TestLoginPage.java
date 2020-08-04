@@ -29,6 +29,6 @@ public class TestLoginPage extends DriverScript
     	   lp.validateLoginFunction("admin","password");
     	   EnterTimePage tp = new EnterTimePage();
     	   tp.clicklogout();
-    	   driver.close();
+    	   //driver.close();
        }
 }

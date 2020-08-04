@@ -56,7 +56,6 @@ public class DriverScript
 				
 				String url = prop.getProperty("qaurl");
 				driver.get(url);
-				driver.close();
 				
 				 
     	   
