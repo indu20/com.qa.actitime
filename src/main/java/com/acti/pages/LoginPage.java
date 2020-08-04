@@ -21,11 +21,11 @@ public class LoginPage extends DriverScript
              }
 	 
 	 //"*****************************Page Actions***********************************************************"//
-	 @Test
+	 
 	  public void validateLoginFunction(String username,String password)
 	  {
-		  usernametbox.sendKeys("username");
-		  pwdtbox.sendKeys("password");
+		  usernametbox.sendKeys("admin");
+		  pwdtbox.sendKeys("manager");
 		  loginbutton.click();
 		  //actilogo.isDisplayed();
 		  //checkbox.isEnabled();
@@ -35,10 +35,12 @@ public class LoginPage extends DriverScript
 	  {
 		return actilogo.isDisplayed();
 	  }
+	  
 	  public boolean verifycheckbox()
 	  {
 		 return checkbox.isEnabled();
 	  }
+	  
 	  public String verifyLoginPagetitle()
 	  {
 		 return driver.getTitle();

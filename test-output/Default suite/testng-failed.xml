@@ -6,13 +6,4 @@
       <class name="com.acti.testcase.TestLoginPage"/>
     </classes>
   </test> <!-- Default test -->
-  <test name="Default test(failed)">
-    <classes>
-      <class name="com.acti.testcase.TestLoginPage">
-        <methods>
-          <include name="verifyLoginpage"/>
-        </methods>
-      </class> <!-- com.acti.testcase.TestLoginPage -->
-    </classes>
-  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
