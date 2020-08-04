@@ -1,38 +1,13 @@
 package com.acti.testcase;
 
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import com.acti.base.DriverScript;
-import com.acti.pages.EnterTimePage;
-import com.acti.pages.LoginPage;
 
-public class TestLoginPage extends DriverScript
+public class TestLoginPage extends BaseTest
 {
-	LoginPage loginpage;
-	EnterTimePage entertimepage;
 	
-  public TestLoginPage() 
-   {
-	  super(); //Super keyword is used to call the parent class constructor
-	   
-}       @BeforeMethod
-        public void beforeTest()
-        {
-           initBrowser();
-	       loginpage = new LoginPage();
-    	   entertimepage = new EnterTimePage();
-    	   
-        }
-
-         @AfterMethod
-        public void tearDown()
-        {
-        	driver.close();
-        }
          
-       @Test(priority=0)
+        @Test(priority=0)
 	    public void verifyLoginpage()
 	    {
 	     String actual = "actiTIME - Login";
