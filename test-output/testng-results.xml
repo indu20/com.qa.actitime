@@ -2,19 +2,42 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="49" started-at="2020-07-31T19:37:52Z" finished-at="2020-07-31T19:37:52Z">
+  <suite name="Default suite" duration-ms="10460" started-at="2020-08-04T00:24:09Z" finished-at="2020-08-04T00:24:19Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="49" started-at="2020-07-31T19:37:52Z" finished-at="2020-07-31T19:37:52Z">
-      <class name="com.acti.pages.LoginPage">
-        <test-method status="FAIL" signature="validateLoginFunction()[pri:0, instance:com.acti.pages.LoginPage@3567135c]" name="validateLoginFunction" duration-ms="16" started-at="2020-07-31T15:37:52Z" finished-at="2020-07-31T15:37:52Z">
-          <exception class="java.lang.NullPointerException">
+    <test name="Default test" duration-ms="10460" started-at="2020-08-04T00:24:09Z" finished-at="2020-08-04T00:24:19Z">
+      <class name="com.acti.testcase.TestLoginPage">
+        <test-method status="FAIL" signature="verifyLoginpage()[pri:0, instance:com.acti.testcase.TestLoginPage@2ff4f00f]" name="verifyLoginpage" duration-ms="10431" started-at="2020-08-03T20:24:09Z" finished-at="2020-08-03T20:24:19Z">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HOME', ip: '192.168.88.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Priths\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56571}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f165aa21a1134e4daee2f960175fadba]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy6.sendKeys(Unknown Source)
-	at com.acti.pages.LoginPage.validateLoginFunction(LoginPage.java:24)
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HOME', ip: '192.168.88.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Priths\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56571}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f165aa21a1134e4daee2f960175fadba
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
+	at com.acti.pages.LoginPage.verifyLoginPagetitle(LoginPage.java:46)
+	at com.acti.testcase.TestLoginPage.verifyLoginpage(TestLoginPage.java:20)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -41,11 +64,11 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateLoginFunction -->
-      </class> <!-- com.acti.pages.LoginPage -->
+        </test-method> <!-- verifyLoginpage -->
+      </class> <!-- com.acti.testcase.TestLoginPage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

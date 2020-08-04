@@ -20,7 +20,7 @@ public class LoginPage extends DriverScript
              PageFactory.initElements(driver,this);
              }
 	 
-	 //"****************************************************************************************"//
+	 //"*****************************Page Actions***********************************************************"//
 	 @Test
 	  public void validateLoginFunction(String username,String password)
 	  {
@@ -33,13 +33,12 @@ public class LoginPage extends DriverScript
 	 
 	  public boolean verifyactilogo()
 	  {
-		boolean logo = actilogo.isDisplayed();
-		return logo;
+		return actilogo.isDisplayed();
 	  }
 	  public boolean verifycheckbox()
 	  {
-		boolean check = checkbox.isEnabled();
-		  return check;
+		boolean check;
+		return check = checkbox.isEnabled();
 	  }
 	  public String verifyLoginPagetitle()
 	  {
