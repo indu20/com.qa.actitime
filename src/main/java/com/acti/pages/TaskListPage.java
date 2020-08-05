@@ -10,12 +10,12 @@ public class TaskListPage extends DriverScript
 {
 	//"******************************Page Elements****************************************"//
 	
-	 @FindBy(id="container_tasks")WebElement task;
-	 @FindBy(linkText="Add New")WebElement addnew;
-	 @FindBy(linkText="+ New Customer")WebElement customer;
+	 //@FindBy(id="container_tasks")WebElement task;
+	 @FindBy(xpath="//div[@class='title ellipsis']")WebElement addnew;
+	 @FindBy(xpath="//div[@class='item createNewCustomer']")WebElement customer;
 	 @FindBy(xpath="//input[@placeholder='Enter Customer Name']")WebElement name;
 	 @FindBy(xpath="//textarea[@placeholder='Enter Customer Description']")WebElement desc;
-	 @FindBy(linkText="Create Customer")WebElement crt;
+	 @FindBy(xpath="//div[(text(),'Create Customer']")WebElement crt;
 	 
 	 
 	 //"****************************Page Initialization*********************************************************"//
@@ -38,9 +38,9 @@ public class TaskListPage extends DriverScript
 	 {
 		 name.sendKeys(customer);
 	 }
-	 public void description()
+	 public void description(String description)
 	 {
-		 desc.sendKeys();
+		 desc.sendKeys(description);
 	 }
 	 public void create()
 	 {
