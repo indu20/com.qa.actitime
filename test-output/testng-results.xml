@@ -2,34 +2,34 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="35254" started-at="2020-08-05T02:27:13Z" finished-at="2020-08-05T02:27:48Z">
+  <suite name="Default suite" duration-ms="30518" started-at="2020-08-05T13:54:31Z" finished-at="2020-08-05T13:55:01Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="35254" started-at="2020-08-05T02:27:13Z" finished-at="2020-08-05T02:27:48Z">
+    <test name="Default test" duration-ms="30518" started-at="2020-08-05T13:54:31Z" finished-at="2020-08-05T13:55:01Z">
       <class name="com.acti.testcase.TestCreateCustomer">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.acti.testcase.TestCreateCustomer@1134affc]" name="beforeTest" is-config="true" duration-ms="6904" started-at="2020-08-04T22:27:13Z" finished-at="2020-08-04T22:27:20Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.acti.testcase.TestCreateCustomer@1134affc]" name="beforeTest" is-config="true" duration-ms="16370" started-at="2020-08-05T09:54:31Z" finished-at="2020-08-05T09:54:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="TestCreateCustomer()[pri:0, instance:com.acti.testcase.TestCreateCustomer@1134affc]" name="TestCreateCustomer" duration-ms="25974" started-at="2020-08-04T22:27:20Z" finished-at="2020-08-04T22:27:46Z">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
+        <test-method status="FAIL" signature="TestCreateCustomer()[pri:0, instance:com.acti.testcase.TestCreateCustomer@1134affc]" name="TestCreateCustomer" duration-ms="11882" started-at="2020-08-05T09:54:47Z" finished-at="2020-08-05T09:54:59Z">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[element not interactable
+              <![CDATA[element click intercepted: Element <a href="/logout.do" id="logoutLink" class="logout">...</a> is not clickable at point (1309, 3). Other element would receive the click: <img src="/img/default/dialogs/exitconfirm/shade.png?hash=1171827477" id="muar" style="display: block;">
   (Session info: chrome=84.0.4147.105)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'HOME', ip: '192.168.88.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Priths\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54488}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: cafd7d7965cb4c4b3a239ec8d29611b5]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Priths\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:55965}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 747b9dcf08e2b5b7811b1ab16cd83ae5]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/logout.do" id="logoutLink" class="logout">...</a> is not clickable at point (1309, 3). Other element would receive the click: <img src="/img/default/dialogs/exitconfirm/shade.png?hash=1171827477" id="muar" style="display: block;">
   (Session info: chrome=84.0.4147.105)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'HOME', ip: '192.168.88.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Priths\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54488}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: cafd7d7965cb4c4b3a239ec8d29611b5
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Priths\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:55965}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 747b9dcf08e2b5b7811b1ab16cd83ae5
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -41,15 +41,15 @@ Session ID: cafd7d7965cb4c4b3a239ec8d29611b5
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy8.sendKeys(Unknown Source)
-	at com.acti.pages.TaskListPage.entername(TaskListPage.java:39)
-	at com.acti.testcase.TestCreateCustomer.TestCreateCustomer(TestCreateCustomer.java:17)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at com.acti.pages.EnterTimePage.clicklogout(EnterTimePage.java:33)
+	at com.acti.testcase.TestCreateCustomer.TestCreateCustomer(TestCreateCustomer.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -76,11 +76,11 @@ Session ID: cafd7d7965cb4c4b3a239ec8d29611b5
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCreateCustomer -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.acti.testcase.TestCreateCustomer@1134affc]" name="tearDown" is-config="true" duration-ms="2346" started-at="2020-08-04T22:27:46Z" finished-at="2020-08-04T22:27:48Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.acti.testcase.TestCreateCustomer@1134affc]" name="tearDown" is-config="true" duration-ms="2232" started-at="2020-08-05T09:54:59Z" finished-at="2020-08-05T09:55:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

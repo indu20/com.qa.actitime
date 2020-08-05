@@ -13,10 +13,9 @@ public class TaskListPage extends DriverScript
 	 //@FindBy(id="container_tasks")WebElement task;
 	 @FindBy(xpath="//div[@class='title ellipsis']")WebElement addnew;
 	 @FindBy(xpath="//div[@class='item createNewCustomer']")WebElement customer;
-	 @FindBy(xpath="//input[@placeholder='Enter Customer Name']")WebElement name;
-	 @FindBy(xpath="//textarea[@placeholder='Enter Customer Description']")WebElement desc;
-	 @FindBy(xpath="//div[(text(),'Create Customer']")WebElement crt;
-	 
+	 @FindBy(xpath="(//input[@placeholder='Enter Customer Name'])[2]") WebElement custnametBox;
+	 @FindBy(xpath="//textarea[@placeholder='Enter Customer Description']") WebElement custdescriptiontarea;
+	 @FindBy(xpath="//div[text()='Create Customer']") WebElement createCustomerButton;	 
 	 
 	 //"****************************Page Initialization*********************************************************"//
 	 
@@ -36,15 +35,15 @@ public class TaskListPage extends DriverScript
 	 }
 	 public void entername(String customer)
 	 {
-		 name.sendKeys(customer);
+		 custnametBox.sendKeys(customer);
 	 }
 	 public void description(String description)
 	 {
-		 desc.sendKeys(description);
+		 custdescriptiontarea.sendKeys(description);
 	 }
 	 public void create()
 	 {
-		 crt.click();
+		 createCustomerButton.click();
 	 }
 	 
    
