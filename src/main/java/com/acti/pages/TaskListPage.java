@@ -15,9 +15,10 @@ public class TaskListPage extends DriverScript
 	 @FindBy(xpath="//div[@class='item createNewCustomer']")WebElement customer;
 	 @FindBy(xpath="(//input[@placeholder='Enter Customer Name'])[2]") WebElement custnametBox;
 	 @FindBy(xpath="//textarea[@placeholder='Enter Customer Description']") WebElement custdescriptiontarea;
-	 @FindBy(xpath="//div[text()='Create Customer']") WebElement createCustomerButton;	 
+	 @FindBy(xpath="//div[text()='Create Customer']") WebElement createCustomerButton;	
+	 @FindBy(xpath="//span[@class='innerHtml']") WebElement successMessageText;
 	 
-	 //"****************************Page Initialization*********************************************************"//
+	 //"****************************Page Initialization**********************************"//
 	 
 	  public TaskListPage()
 	  {
@@ -44,6 +45,10 @@ public class TaskListPage extends DriverScript
 	 public void create()
 	 {
 		 createCustomerButton.click();
+	 }
+	 public String successmessage()
+	 {
+		 return successMessageText.getText();
 	 }
 	 
    

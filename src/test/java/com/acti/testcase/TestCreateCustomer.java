@@ -16,8 +16,10 @@ public class TestCreateCustomer extends BaseTest
     	  taskpage.clicknewcustomer();
     	  taskpage.entername("Testing customer");
     	  taskpage.description("dummy message");
-    	  Thread.sleep(2000);
     	  taskpage.create();
+    	  String msg = taskpage.successmessage();
+    	  System.out.println(msg);
+    	  Thread.sleep(2000);
     	  entertimepage.clicklogout();
     	  
     	  
