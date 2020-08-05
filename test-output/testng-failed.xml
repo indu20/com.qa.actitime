@@ -6,4 +6,15 @@
       <class name="com.acti.testcase.TestCreateCustomer"/>
     </classes>
   </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.acti.testcase.TestCreateCustomer">
+        <methods>
+          <include name="TestCreateCustomer"/>
+          <include name="tearDown"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.acti.testcase.TestCreateCustomer -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

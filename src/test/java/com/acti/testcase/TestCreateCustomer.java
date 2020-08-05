@@ -1,5 +1,6 @@
 package com.acti.testcase;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 
@@ -19,6 +20,7 @@ public class TestCreateCustomer extends BaseTest
     	  taskpage.create();
     	  String msg = taskpage.successmessage();
     	  System.out.println(msg);
+    	  Assert.assertTrue(msg.contains("been created"));
     	  Thread.sleep(2000);
     	  entertimepage.clicklogout();
     	  
